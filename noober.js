@@ -47,7 +47,7 @@ function pageLoad() {
       passenger3DropoffAddressLine1 = passenger3.dropoffLocation.address
       passenger3DropoffAddressLine2 = `${passenger3.dropoffLocation.city}, ${passenger3.dropoffLocation.state} ${passenger3.dropoffLocation.zip}`
     }
-  } else if (passenger1.purpleRequested = true) {
+  } else if (passenger1.purpleRequested == true) {
     // Check for Noober Purple
     levelOfService = 'Noober Purple'
   } else if (passenger1.numberOfPassengers > 3) {
@@ -57,9 +57,5 @@ function pageLoad() {
     levelOfService = 'Noober X'
   }
 
-  // passenger3Name, passenger3Phone, passenger3NumberOfPassengers
-  // passenger3PickupAddressLine1, passenger3PickupAddressLine2
-  // passenger3DropoffAddressLine1, passenger3DropoffAddressLine2
-  
   //  👆 YOUR CODE ENDS HERE. DON'T CHANGE ANY OTHER CODE 👆
 }

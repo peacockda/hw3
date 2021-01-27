@@ -6,23 +6,8 @@ function pageLoad() {
   // is refreshed or reloaded, the 'ride' variable will contain something different
   // to get started, try to write other parts of 'ride' to the JavaScript console in Chrome
   // e.g. ask 'ride' for its length or only grab the first member of the Array
-  console.log(ride)
-
-  // these variables map to the elements on the finished page;
-  // assign the proper value to each variable
-  
-  // Passenger 1 details
-  let passenger1 = ride[0]
-  passenger1Name = `${passenger1.passengerDetails.first} ${passenger1.passengerDetails.last}`
-  passenger1Phone = `${passenger1.passengerDetails.phoneNumber}`
-  passenger1NumberOfPassengers = passenger1.numberOfPassengers
-  passenger1PickupAddressLine1 = passenger1.pickupLocation.address
-  passenger1PickupAddressLine2 = `${passenger1.pickupLocation.city}, ${passenger1.pickupLocation.state} ${passenger1.pickupLocation.zip}`
-  passenger1DropoffAddressLine1 = passenger1.dropoffLocation.address
-  passenger1DropoffAddressLine2 = `${passenger1.dropoffLocation.city}, ${passenger1.dropoffLocation.state} ${passenger1.dropoffLocation.zip}`
-
-  // levelOfService
-  if (ride.length > 1) {
+   // levelOfService
+   if (ride.length > 1) {
     // If there are more than 1 riders, it must be a Noober Pool
     levelOfService = 'Noober Pool'
     
@@ -56,6 +41,23 @@ function pageLoad() {
   } else {
     levelOfService = 'Noober X'
   }
+  
+  console.log(ride)
+
+  // these variables map to the elements on the finished page;
+  // assign the proper value to each variable
+  
+  // Passenger 1 details
+  let passenger1 = ride[0]
+  passenger1Name = `${passenger1.passengerDetails.first} ${passenger1.passengerDetails.last}`
+  passenger1Phone = `${passenger1.passengerDetails.phoneNumber}`
+  passenger1NumberOfPassengers = passenger1.numberOfPassengers
+  passenger1PickupAddressLine1 = passenger1.pickupLocation.address
+  passenger1PickupAddressLine2 = `${passenger1.pickupLocation.city}, ${passenger1.pickupLocation.state} ${passenger1.pickupLocation.zip}`
+  passenger1DropoffAddressLine1 = passenger1.dropoffLocation.address
+  passenger1DropoffAddressLine2 = `${passenger1.dropoffLocation.city}, ${passenger1.dropoffLocation.state} ${passenger1.dropoffLocation.zip}`
+
+ 
 
   //  👆 YOUR CODE ENDS HERE. DON'T CHANGE ANY OTHER CODE 👆
 }
